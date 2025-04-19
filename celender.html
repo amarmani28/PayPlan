@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>payPlan calculator</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <div class="container">
+<h1>PayPlan</h1>
+<p>Loan Amount ₹ :</p>
+<input type="number" class="input-number" id="Loan-amount" min="1" max="5000000" value="" onchange="payPlan()" placeholder="Enter loan amount">
+<p>Interest Rate %:
+<input type="number" class="input-number" id="Interest-rate" min="0" max="100" value="" step=".1" onchange="payPlan()" placeholder="Annual interest rate">
+</p>
+<p>Months to Pay :
+  <input type="number" class="input-number" id="Months-to-pay" value="" min="3" max="" onchange="payPlan()" placeholder="Months(Loan Duration)">
+
+</p>
+<p id="payment" class="payments">Monthly Payment :</p>
+
+<button class="button" onclick="payPlan()">Check</button>
+
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
